@@ -63,3 +63,6 @@ typings/
 
 # Docker
 docker/postgres/data
+
+#Configuracion local de base de datos
+.env.development
