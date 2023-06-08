@@ -53,7 +53,7 @@ module.exports = {
 
     await queryInterface.bulkInsert('Equivalencia', [
       {
-        instituto: 'ninguno',
+        instituto: 'Untref',
         UsuarioId: usuario1,
         estado: 'aceptado',
         carrera: 'Ingenieria en sistemas',
@@ -62,7 +62,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        instituto: 'ninguno',
+        instituto: 'Untref',
         UsuarioId: usuario2,
         estado: 'aceptado',
         carrera: 'Ingenieria en sistemas',
@@ -72,7 +72,7 @@ module.exports = {
       },
 
       {
-        instituto: 'ninguno',
+        instituto: 'Untref',
         UsuarioId: usuario3,
         estado: 'rechazado',
         carrera: 'Ingenieria en sistemas',
@@ -82,7 +82,7 @@ module.exports = {
       },
 
       {
-        instituto: 'ninguno',
+        instituto: 'Untref',
         UsuarioId: usuario4,
         estado: 'pendiente',
         carrera: 'Ingenieria en sistemas',
@@ -91,7 +91,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        instituto: 'ninguno',
+        instituto: 'Untref',
         UsuarioId: usuario5,
         estado: 'aceptado',
         carrera: 'Ingenieria en sistemas',
