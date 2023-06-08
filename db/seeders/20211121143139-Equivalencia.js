@@ -55,7 +55,7 @@ module.exports = {
       {
         instituto: 'Untref',
         UsuarioId: usuario1,
-        estado: 'aceptado',
+        estado: 'Abierto',
         carrera: 'Ingenieria en sistemas',
         observaciones: 'falta analitico',
         createdAt: new Date(),
@@ -64,7 +64,7 @@ module.exports = {
       {
         instituto: 'Untref',
         UsuarioId: usuario2,
-        estado: 'aceptado',
+        estado: 'Cerrado',
         carrera: 'Ingenieria en sistemas',
         observaciones: 'falta dni',
         createdAt: new Date(),
@@ -74,7 +74,7 @@ module.exports = {
       {
         instituto: 'Untref',
         UsuarioId: usuario3,
-        estado: 'rechazado',
+        estado: 'Abierto',
         carrera: 'Ingenieria en sistemas',
         observaciones: 'falta analitico',
         createdAt: new Date(),
@@ -84,7 +84,7 @@ module.exports = {
       {
         instituto: 'Untref',
         UsuarioId: usuario4,
-        estado: 'pendiente',
+        estado: 'Abierto',
         carrera: 'Ingenieria en sistemas',
         observaciones: 'falta analitico',
         createdAt: new Date(),
@@ -93,7 +93,7 @@ module.exports = {
       {
         instituto: 'Untref',
         UsuarioId: usuario5,
-        estado: 'aceptado',
+        estado: 'Cerrado',
         carrera: 'Ingenieria en sistemas',
         observaciones: 'no hay observaciones',
         createdAt: new Date(),
