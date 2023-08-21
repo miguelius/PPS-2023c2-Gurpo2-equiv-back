@@ -48,6 +48,7 @@ module.exports = {
     await queryInterface.bulkInsert('Materia_solicitada', [
       {
         nombre: 'Introducción a la Programación',
+        carrera: 'Tecnicatura en informatica',
         estado: 'pendiente',
         EquivalenciumId: matsolicitada1,
         createdAt: new Date(),
@@ -56,6 +57,7 @@ module.exports = {
 
       {
         nombre: 'Gramatica 1',
+        carrera: 'Profesorado de Ingles',
         estado: 'pendiente',
         EquivalenciumId: matsolicitada2,
         createdAt: new Date(),
@@ -64,6 +66,7 @@ module.exports = {
 
       {
         nombre: 'Biologia General',
+        carrera: 'Lic. en Biotecnologia',
         estado: 'pendiente',
         EquivalenciumId: matsolicitada3,
         createdAt: new Date(),
@@ -72,6 +75,7 @@ module.exports = {
 
       {
         nombre: 'Pedagogía I',
+        carrera: 'Lic. en Educacion',
         estado: 'pendiente',
         EquivalenciumId: matsolicitada4,
         createdAt: new Date(),
@@ -80,6 +84,7 @@ module.exports = {
 
       {
         nombre: 'Metalurgia l',
+        carrera: 'Tec. en Metalurgica',
         estado: 'pendiente',
         EquivalenciumId: matsolicitada5,
         createdAt: new Date(),
