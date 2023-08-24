@@ -1,3 +1,4 @@
+'use strict';
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     const materia1 = await queryInterface.sequelize.query(
@@ -47,6 +48,7 @@ module.exports = {
 
     await queryInterface.bulkInsert('Materia_solicitada', [
       {
+        id: 1,
         nombre: 'Introducción a la Programación',
         carrera: 'Tecnicatura en informatica',
         estado: 'pendiente',
@@ -56,6 +58,7 @@ module.exports = {
       },
 
       {
+        id: 2,
         nombre: 'Gramatica 1',
         carrera: 'Profesorado de Ingles',
         estado: 'pendiente',
@@ -65,6 +68,7 @@ module.exports = {
       },
 
       {
+        id: 3,
         nombre: 'Biologia General',
         carrera: 'Lic. en Biotecnologia',
         estado: 'pendiente',
@@ -74,6 +78,7 @@ module.exports = {
       },
 
       {
+        id: 4,
         nombre: 'Pedagogía I',
         carrera: 'Lic. en Educacion',
         estado: 'pendiente',
@@ -83,6 +88,7 @@ module.exports = {
       },
 
       {
+        id: 5,
         nombre: 'Metalurgia l',
         carrera: 'Tec. en Metalurgica',
         estado: 'pendiente',
@@ -94,11 +100,6 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
-    /**
-     * Add commands to revert seed here.
-     *
-     * Example:
-     * await queryInterface.bulkDelete('People', null, {});
-     */
+    await queryInterface.bulkDelete('Materia_solicitada', null, {});
   },
 };

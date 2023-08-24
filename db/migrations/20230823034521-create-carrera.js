@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('Carreras', {
+    await queryInterface.createTable('Carrera', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -12,7 +12,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       nombre_instituto: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
       activo: {
         type: Sequelize.INTEGER
@@ -28,6 +28,6 @@ module.exports = {
     });
   },
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable('Carreras');
+    await queryInterface.dropTable('Carrera');
   }
 };

@@ -14,9 +14,6 @@ module.exports = {
       id_remitente: {
         type: Sequelize.INTEGER
       },
-      idequivalencia: {
-        type: Sequelize.INTEGER
-      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
