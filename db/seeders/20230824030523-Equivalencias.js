@@ -6,14 +6,14 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    const product1Data = await queryInterface.sequelize.query(
+    const user1Data = await queryInterface.sequelize.query(
       //`SELECT id FROM "Usuario" WHERE dni = '30563652' `,
       `SELECT id FROM "Usuarios" WHERE id = '1' `,
       {
         type: queryInterface.sequelize.QueryTypes.SELECT,
       }
     );
-    const usuario1 = product1Data[0].id;
+    const usuario1 = user1Data[0].id;
 
     const carrera_1 = await queryInterface.sequelize.query(
       `SELECT id FROM "Carrera" WHERE nombre_carrera = 'Tecnicatura en informatica' `,
@@ -23,14 +23,14 @@ module.exports = {
     );
     const carrera1 = carrera_1[0].id;
 
-    const product2Data = await queryInterface.sequelize.query(
+    const user2Data = await queryInterface.sequelize.query(
       //`SELECT id FROM "Usuarios" WHERE dni = '35025698' `,
       `SELECT id FROM "Usuarios" WHERE id = '3' `,
       {
         type: queryInterface.sequelize.QueryTypes.SELECT,
       }
     );
-    const usuario2 = product2Data[0].id;
+    const usuario2 = user2Data[0].id;
 
     const carrera_2 = await queryInterface.sequelize.query(
       `SELECT id FROM "Carrera" WHERE nombre_carrera = 'Profesorado de Ingles' `,
@@ -40,14 +40,14 @@ module.exports = {
     );
     const carrera2 = carrera_2[0].id;
 
-    const product3Data = await queryInterface.sequelize.query(
+    const user3Data = await queryInterface.sequelize.query(
       // `SELECT id FROM "Usuarios" WHERE dni = '35563675' `,
       `SELECT id FROM "Usuarios" WHERE id = '4' `,
       {
         type: queryInterface.sequelize.QueryTypes.SELECT,
       }
     );
-    const usuario3 = product3Data[0].id;
+    const usuario3 = user3Data[0].id;
 
     const carrera_3 = await queryInterface.sequelize.query(
       `SELECT id FROM "Carrera" WHERE nombre_carrera = 'Lic. en Biotecnologia' `,
@@ -57,14 +57,14 @@ module.exports = {
     );
     const carrera3 = carrera_3[0].id;
 
-    const product4Data = await queryInterface.sequelize.query(
+    const user4Data = await queryInterface.sequelize.query(
       //`SELECT id FROM "Usuarios" WHERE dni = '35563652' `,
       `SELECT id FROM "Usuarios" WHERE id = '5' `,
       {
         type: queryInterface.sequelize.QueryTypes.SELECT,
       }
     );
-    const usuario4 = product4Data[0].id;
+    const usuario4 = user4Data[0].id;
 
     const carrera_4 = await queryInterface.sequelize.query(
       `SELECT id FROM "Carrera" WHERE nombre_carrera = 'Lic. en Educacion' `,
@@ -74,14 +74,14 @@ module.exports = {
     );
     const carrera4 = carrera_4[0].id;
 
-    const product5Data = await queryInterface.sequelize.query(
+    const user5Data = await queryInterface.sequelize.query(
       //`SELECT id FROM "Usuarios" WHERE dni = '29025755' `,
       `SELECT id FROM "Usuarios" WHERE id = '6' `,
       {
         type: queryInterface.sequelize.QueryTypes.SELECT,
       }
     );
-    const usuario5 = product5Data[0].id;
+    const usuario5 = user5Data[0].id;
 
     const carrera_5 = await queryInterface.sequelize.query(
       `SELECT id FROM "Carrera" WHERE nombre_carrera = 'Tec. en Metalurgica' `,
@@ -94,7 +94,7 @@ module.exports = {
     await queryInterface.bulkInsert('Equivalencia', [
       {
         instituto: 'Untref',
-        estado: 'aceptado',
+        estado: 'pendiente',
         carrera: 'Ingenieria en sistemas en equivalencia',
         observaciones: 'falta analitico',
         UsuarioId: usuario1,
@@ -104,7 +104,7 @@ module.exports = {
       },
       {
         instituto: 'Untref',
-        estado: 'aceptado',
+        estado: 'pendiente',
         carrera: 'Ingenieria en sistemas en equivalencia',
         observaciones: 'falta dni',
         UsuarioId: usuario2,
@@ -115,7 +115,7 @@ module.exports = {
 
       {
         instituto: 'Untref',
-        estado: 'rechazado',
+        estado: 'pendiente',
         carrera: 'Ingenieria en sistemas',
         observaciones: 'falta analitico en equivalencia',
         UsuarioId: usuario3,
@@ -136,7 +136,7 @@ module.exports = {
       },
       {
         instituto: 'Untref',
-        estado: 'aceptado',
+        estado: 'pendiente',
         carrera: 'Ingenieria en sistemas',
         observaciones: 'no hay observaciones en equivalencia',
         UsuarioId: usuario5,
