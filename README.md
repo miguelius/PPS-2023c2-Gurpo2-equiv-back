@@ -52,9 +52,8 @@ git clone https://github.com/DesApp-2023c1-Grupo-2/PPS-2023c2-Gurpo2-equiv-back.
 sudo -u usuario psql # donde "usuario" debe ser el creado para administrador postgres
 ```
 
-# iniciada la consola en postgres, ejecutar:
-
 ```shell
+# iniciada la consola en postgres, ejecutar:
 CREATE DATABASE equivalencia;
 ```
 
@@ -113,7 +112,7 @@ npm run db:init
 npm run db:seed
 ```
 
-# ************************************\*\*\*************************************
+# ****************\*\*\*\*****************\*\*\*****************\*\*\*\*****************
 
 # Repositorio semilla: API NodeJS :seedling:
 
