@@ -11,6 +11,8 @@
 ├── db
 │   ├── migrations      # Migraciones de la base de datos
 │   └── seeders         # Datos de prueba para la base de datos
+├── fileserver
+│   └── archivos
 ├── docker              # Configuración de Docker para desarrollo
 ├── lib
 │   ├── config          # Configuración de la base de datos
@@ -33,30 +35,44 @@
 
 Asumiendo que se instalaron los software y librerias, ejecutar para iniciar por primera vez y que puedas trabajar en el proyecto:
 
-````shell
 # 1.- Hacerse del proyecto
+
+```shell
 # Descargar inicialmente el proyecto desde el repo de Github. Tener instalado Git:
+
 git clone https://github.com/DesApp-2023c1-Grupo-2/PPS-2023c2-Gurpo2-equiv-back.git
+
 # a efecto de una proba inicial, utilizaremos el branch probado: sprint3-back-dev
+```
 
 # 2.- Crear la base de datos.
+
+```shell
 # Teniendo postgres instalado, uilizando la ejecucion de consola:
 sudo -u usuario psql # donde "usuario" debe ser el creado para administrador postgres
+```
 
 # iniciada la consola en postgres, ejecutar:
+
+```shell
 CREATE DATABASE equivalencia;
+```
 
 # 3.- Configurar entorno
+
+```shell
 # definir las variables de entorno necesarias para acceder a las bases de datos y envio de mails.
 nano .env.development
+```
 
 # Confirmar los siguientes datos
+
+```shell
 # Donde la USERNAME es el usuario de postgres y PASSWORD es la clave de acceso que tiene ese usuario. Esto debe actualizarse con los datos que tengan configurado en su servidor.
 # DATABASE, es la base de datos creada anteriormente.
 # NODEMAILER_USER, es la cuenta de email desde donde se envian los correos de avisos del sistema.
 # NODEMAILER_PASSWORD. es el token de la cuenta Google, que se genero para que pueda conectar lña aplicacion.
 
-```shell
 SQL_USERNAME=postgres
 SQL_PASSWORD=P4$$w0rD
 SQL_DATABASE=equivalencias
@@ -66,7 +82,7 @@ NODEMAILER_PASSWORD='nzpd frgy frih gylc'
 
 SQL_TEST_DATABASE=equivalencias
 
-````
+```
 
 # Instalar las dependencias Node del proyecto.
 
@@ -97,7 +113,7 @@ npm run db:init
 npm run db:seed
 ```
 
-# ******************************************\_******************************************
+# ********************\*\*********************\_********************\*\*********************
 
 # Repositorio semilla: API NodeJS :seedling:
 
