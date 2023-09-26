@@ -89,9 +89,8 @@ SQL_TEST_DATABASE=equivalencias
 npm install
 ```
 
-# instalacion de dependencias complementarias.
-
 ```shell
+# instalacion de dependencias complementarias.
 npm install fs path
 npm install multer
 npm install bcryptjs
@@ -112,7 +111,9 @@ npm run db:init
 npm run db:seed
 ```
 
-# ****************\*\*\*\*****************\*\*\*****************\*\*\*\*****************
+# Documentacion anterior:
+
+# ******\*\*\*\*******\*\*\*\*******\*\*\*\*******\*\*\*******\*\*\*\*******\*\*\*\*******\*\*\*\*******
 
 # Repositorio semilla: API NodeJS :seedling:
 
